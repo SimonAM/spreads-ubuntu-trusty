@@ -70,7 +70,7 @@ create and open a new file
 ```bash
 sudo nano /etc/ld.so.conf.d/spreads.conf
 ```
-add the line
+add the line (And then save with ctrl+o, exit with ctrl+x)
 ```bash
 /usr/local/lib/chdkptp/
 ```
