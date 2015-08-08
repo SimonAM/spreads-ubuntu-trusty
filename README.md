@@ -133,7 +133,7 @@ sudo adduser username staff
 ```
 
 now add the lua env variable to the global path in order that the chdkptp command will work
-open the file 
+open the file (or press ctr+h, in correct folder to find the file. And enter the lines in the correct place, then save)
 ```bash
 vi ~/.bashrc 
 ```
@@ -160,11 +160,11 @@ pip install Wand
 pip install Flask-Compress
 ```
 
-now install spreads by checking out the github repos than compiling the web client first than ´pip installing´ the rest.
-we have to do this because of a bug in the current web client (as of revision [3a2b9e075c3de0fa9dc81921d598ac559fdc87b3](https://github.com/DIYBookScanner/spreads/commit/3a2b9e075c3de0fa9dc81921d598ac559fdc87b3), see issue [126](https://github.com/DIYBookScanner/spreads/issues/126))
-first we need to install the node.js program, than we change the makefile for the client because the tests do not work at the moment and will therefore not allow to complete compilation.
-We than compile the client using the modified makefile.
-Than we install spreads with the compiled client,
+Now install spreads by checking out the github repo. First compile the web client, then ´pip install´ the rest.
+We have to do this because of a bug in the current web client (as of revision [3a2b9e075c3de0fa9dc81921d598ac559fdc87b3](https://github.com/DIYBookScanner/spreads/commit/3a2b9e075c3de0fa9dc81921d598ac559fdc87b3), see issue [126](https://github.com/DIYBookScanner/spreads/issues/126))
+First we need to install the node.js program, than we change the makefile for the client because the tests do not work at the moment and will therefore not allow to complete compilation.
+We then compile the client using the modified makefile.
+Then we install spreads with the compiled client,
 
 install node.js
 ```bash
