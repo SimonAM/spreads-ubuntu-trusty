@@ -167,7 +167,7 @@ pip install Flask-Compress
 
 Now install spreads by checking out the github repo. First compile the web client, then ´pip install´ the rest.
 We have to do this because of a bug in the current web client (as of revision [3a2b9e075c3de0fa9dc81921d598ac559fdc87b3](https://github.com/DIYBookScanner/spreads/commit/3a2b9e075c3de0fa9dc81921d598ac559fdc87b3), see issue [126](https://github.com/DIYBookScanner/spreads/issues/126))
-First we need to install the node.js program, than we change the makefile for the client because the tests do not work at the moment and will therefore not allow to complete compilation.
+First we need to install the node.js program, then we change the makefile for the client because the tests do not work at the moment and will therefore not allow to complete compilation.
 We then compile the client using the modified makefile.
 Then we install spreads with the compiled client,
 
@@ -188,7 +188,12 @@ make all
 cd /tmp/spreads
 pip install .
 ```
-
+If you are scanning books in non-english languages. Find the corresponding language file for text recognition. 
+The Swedish tesseract file is called tesseract-ocr-swe. 
+So swedes would use...
+```
+sudo apt-get instal tesseract-ocr-swe
+```
 
 now run the spreads configuration program
 
@@ -217,7 +222,7 @@ kill -9 PID_of_gphoto2_process
 
 I use the Canon A2200, enable CHDK in your camera 
 (click [here](http://chdk.wikia.com/wiki/CHDK_1.2.0_User_Manual) - section Using CHKD), plug in the micro USB after 
-enabling (I use firmware update method) than plug in the other USB end into your computer, than run the
+enabling (I use firmware update method) then plug in the other USB end into your computer, then run the
 chdkptp program to test if it is installed correctly.
 
 ```bash
@@ -227,6 +232,6 @@ now click on Connect button.
 
 If it is running without problems end the program.
 
-Now restart the spread configure program again, enable CHDK in your camera, than connect to the computer
+Now restart the spread configure program again, enable CHDK in your camera, then connect to the computer
  (if not done already) and configure target_page and focus. Should give no errors if camera and CHDK has been 
 setup correctly.
