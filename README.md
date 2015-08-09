@@ -148,7 +148,12 @@ open a new shell or type
 ```bash
 source ~/.bashrc
 ```
-
+Install som further dependencies.
+```bash
+sudo apt-get install liblua5.2-dev
+pip install --install-option='--no-luajit' lupa
+pip install chdkptp.py
+```
 we need some more python modules for the spread web plugin
 ```bash
 pip install Flask
@@ -204,10 +209,10 @@ now its time to configure the cameras
 Before rerunning the spreads config program again first make sure if you can use the 
 chdkptp program.
 
-First before using chdkptp in Ubuntu 14.04 you have to kill gphoto in order to gain access to the chdk-enabled cameras otherwise you will not be able to use them (gphoto2 will block access to the cameras for all other processes)
+First before using chdkptp in Ubuntu 14.04 you have to kill gphoto in order to gain access to the chdk-enabled cameras otherwise you will not be able to use them (gphoto2 will block access to the cameras for all other processes). The first number to the left is the PID, this has to be inserted into the third line in the following code. 
 ```bash
 ps aux | grep gphoto
-kill -9 <PID of gphoto2 process>
+kill -9 PID_of_gphoto2_process
 ```
 
 I use the Canon A2200, enable CHDK in your camera 
