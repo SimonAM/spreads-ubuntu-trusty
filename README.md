@@ -192,7 +192,7 @@ If you are scanning books in non-english languages. Find the corresponding langu
 The Swedish tesseract file is called tesseract-ocr-swe. 
 So swedes would use...
 ```
-sudo apt-get instal tesseract-ocr-swe
+sudo apt-get install tesseract-ocr-swe
 ```
 
 now run the spreads configuration program
